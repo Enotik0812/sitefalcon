@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="t">
+  <title id="t">SiteFalcon — мониторинг сайтов 24/7</title>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1b2647" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.82" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#2b59ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#2b59ff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="card"><rect x="1" y="1" width="1198" height="298" rx="18"/></clipPath>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="298" rx="18" fill="#0a1330" stroke="#1d2a55" stroke-width="2"/>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="300" fill="url(#grid)"/>
+    <rect width="1200" height="300" fill="url(#glow)"/>
+  </g>
+
+  <g font-family="'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif">
+    <text x="64" y="84" font-family="ui-monospace, 'Cascadia Code', Consolas, monospace" font-size="17" fill="#7d88a8" letter-spacing="1">SITEFALCON.RU</text>
+    <text x="64" y="150" font-size="60" font-weight="700" fill="#ffffff">SiteFalcon</text>
+    <text x="64" y="196" font-size="25" fill="#c9d3f0">Мониторинг сайтов 24/7</text>
+    <text x="64" y="236" font-size="18" fill="#7d88a8">доступность · SSL и домен · безопасность · формы · Telegram</text>
+  </g>
+
+  <!-- карточки статусов -->
+  <g font-family="ui-monospace, 'Cascadia Code', Consolas, monospace" font-size="15">
+    <rect x="760" y="62" width="376" height="48" rx="10" fill="#111d45" stroke="#22316a"/>
+    <circle cx="784" cy="86" r="6" fill="#12c77f"/>
+    <text x="800" y="91" fill="#e3e9ff">site-one.ru</text>
+    <text x="1116" y="91" text-anchor="end" fill="#7d88a8">182 ms</text>
+
+    <rect x="760" y="122" width="376" height="48" rx="10" fill="#111d45" stroke="#22316a"/>
+    <circle cx="784" cy="146" r="6" fill="#ff4757">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="800" y="151" fill="#e3e9ff">site-two.ru</text>
+    <text x="1116" y="151" text-anchor="end" fill="#ff4757">HTTP 502</text>
+
+    <rect x="760" y="182" width="376" height="48" rx="10" fill="#111d45" stroke="#22316a"/>
+    <circle cx="784" cy="206" r="6" fill="#ffad1f"/>
+    <text x="800" y="211" fill="#e3e9ff">site-three.ru</text>
+    <text x="1116" y="211" text-anchor="end" fill="#ffad1f">SSL · 6 дн.</text>
+  </g>
+</svg>
